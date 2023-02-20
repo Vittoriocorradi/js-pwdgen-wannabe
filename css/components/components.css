@@ -1,0 +1,65 @@
+/* COMPONENTI */
+
+/* Stella con linea */
+
+.ms-star {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.ms-star i {
+    font-size: 28px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+body:hover .ms-star i {
+    opacity: 1;
+}
+
+.line-before {
+    content: '';
+    display: block;
+    width: 0;
+    height: .0625rem;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s, width 2s;
+}
+
+.line-after {
+    content: '';
+    display: block;
+    width: 0;
+    height: .0625rem;
+    border: 2px solid #000;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    opacity: 0;
+    transition: opacity 2s, width 2s;
+}
+
+body:hover .line-before,
+body:hover .line-after {
+    animation-name: widening-lines;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    width: 45%;
+}
+/* 
+ @keyframes widening-lines {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+} */
