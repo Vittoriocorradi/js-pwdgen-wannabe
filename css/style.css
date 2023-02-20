@@ -1,0 +1,30 @@
+/*  
+--------
+TYPO
+--------
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  
+--------
+Header
+--------
+*/
+
+header {
+    background-color: #0b4d99;
+    box-shadow: 0 .3125rem .125rem 0 #000;
+}
+
+header .container {
+    height: 6.875rem;
+}
+
+
+
+header .container img {
+    height: 85%;
+}
