@@ -10,7 +10,17 @@ body {
 
 /*  
 --------
-Header
+COMMON
+--------
+*/
+
+body {
+    height: 100vh;
+}
+
+/*  
+--------
+HEADER
 --------
 */
 
@@ -27,4 +37,49 @@ header .container {
 
 header .container img {
     height: 85%;
+}
+
+/*  
+--------
+MAIN
+--------
+*/
+
+main {
+    height: calc(100% - 6.875rem);
+    overflow-y: auto;
+    padding-bottom: 6.25rem;
+}
+
+main #ms-pwd .ms-pwd {
+    position: relative;
+}
+
+main #ms-pwd .pre-hover,
+main #ms-pwd .post-hover {
+    background-color: #ffab45;
+    border: 1px solid black;
+    padding: 1.25rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+main #ms-pwd .pre-hover {
+    transition: opacity 1s; 
+    z-index: 1;
+}
+
+
+main #ms-pwd .post-hover {}
+
+/*  
+--------
+EFFETTI
+--------
+*/ 
+
+main .pre-hover:hover {
+    opacity: 0;
 }
