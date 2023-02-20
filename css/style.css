@@ -48,7 +48,7 @@ MAIN
 */
 
 main {
-    height: calc(100% - 6.875rem);
+    height: calc(100% - 10.625rem);
     overflow-y: auto;
     padding-bottom: 6.25rem;
 }
@@ -75,6 +75,18 @@ main #ms-pwd .pre-hover {
 
 
 main #ms-pwd .post-hover {}
+
+/*  
+--------
+FOOTER
+--------
+*/ 
+
+footer {
+    height: 3.75rem;
+    line-height: 3.75rem;
+    background-color: #333;
+}
 
 /*  
 --------
